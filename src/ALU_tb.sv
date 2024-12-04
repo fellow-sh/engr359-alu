@@ -55,8 +55,8 @@ module ALU_tb;
         // Test 7: NOT (Opcode 0110)
         instruction = {4'b0110, 4'd1, 4'd0, 4'd8}; // NOT R1 -> R8
         #5;
-        $display("NOT R1, R2, R8 -> %h", registers[8]);
+        $display("NOT R1, R8 -> %h", registers[8]);
 
         $finish;
     end
-endmodule
+endmodule   
