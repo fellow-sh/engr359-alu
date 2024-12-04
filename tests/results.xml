@@ -1,0 +1,13 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1733261198" />
+    <testcase name="ALU_imm_load_test" classname="test_ALU" file="/home/julish/git/engr359-alu/tests/test_ALU.py" lineno="30" time="0.0008389949798583984" sim_time_ns="30.001" ratio_time="35758.25925092356" />
+    <testcase name="ALU_randomized_add_test" classname="test_ALU" file="/home/julish/git/engr359-alu/tests/test_ALU.py" lineno="50" time="0.0025539398193359375" sim_time_ns="310.00100000000003" ratio_time="121381.48191784916" />
+    <testcase name="ALU_randomized_sub_test" classname="test_ALU" file="/home/julish/git/engr359-alu/tests/test_ALU.py" lineno="70" time="0.0027399063110351562" sim_time_ns="310.00100000000003" ratio_time="113142.91979672817" />
+    <testcase name="ALU_randomized_mul_test" classname="test_ALU" file="/home/julish/git/engr359-alu/tests/test_ALU.py" lineno="90" time="0.002197742462158203" sim_time_ns="310.001" ratio_time="141054.28881579518" />
+    <testcase name="ALU_randomized_and_test" classname="test_ALU" file="/home/julish/git/engr359-alu/tests/test_ALU.py" lineno="110" time="0.0022573471069335938" sim_time_ns="310.0010000000001" ratio_time="137329.7881605408" />
+    <testcase name="ALU_randomized_or_test" classname="test_ALU" file="/home/julish/git/engr359-alu/tests/test_ALU.py" lineno="130" time="0.0023207664489746094" sim_time_ns="310.001" ratio_time="133576.99140168482" />
+    <testcase name="ALU_randomized_xor_test" classname="test_ALU" file="/home/julish/git/engr359-alu/tests/test_ALU.py" lineno="150" time="0.002251863479614258" sim_time_ns="310.001" ratio_time="137664.20691413444" />
+    <testcase name="ALU_randomized_not_test" classname="test_ALU" file="/home/julish/git/engr359-alu/tests/test_ALU.py" lineno="170" time="0.0022237300872802734" sim_time_ns="210.00099999999975" ratio_time="94436.3712130373" />
+  </testsuite>
+</testsuites>
