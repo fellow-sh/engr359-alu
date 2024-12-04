@@ -4,8 +4,7 @@
  * The "ALU" design to test.
  *
  * Features a simple instruction decoder, built-in exposed data registers,
- * internal buses for register transfers, and kinda-gate-level defined
- * arithmetic operations.
+ * and kinda-gate-level defined arithmetic operations.
  * 
  * This "ALU" lacks status input/output, an register-ALU bus, and a control
  * unit. Technically an ALU should not have a register bank but I digress.
