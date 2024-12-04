@@ -184,3 +184,27 @@ async def ALU_randomized_not_test(dut):
         assert dut.registers[1].value == (~operand1 & 0xFFFF), \
             f'Randomized NOT failed'
     
+    
+@cocotb.test()
+async def ALU_repeated_instr_test(dut):
+    """Test if the ALU can read the same instruction twice. This should fail."""
+    # Reset
+    dut.instruction.value = 0x0000
+    await Timer(10, units='ns')
+
+    # Write '1' to R0
+    dut.instruction.value = 0xf001
+    await Timer(10, units='ns')
+
+    # ADD R0, R0, R0 (R0 -> 2)
+    dut.instruction.value = 0x0000
+    await Timer(10, units='ns')
+    
+    # ADD R0, R0, R0 again (R0 -> 4)
+    dut.instruction.value = 0x0000
+    await Timer(10, units='ns')
+
+    # The second ADD instruction will not execute.
+    # The ALU only updates for every new instruction.
+    assert dut.registers[0].value == 2
+    
